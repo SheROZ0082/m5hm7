@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">lesson07_month05</string>
+    <string name="calculate">calculate</string>
+    <string name="add">add</string>
+    <string name="divide">divide</string>
+    <string name="calculator">calculator</string>
+    <string name="_77">77</string>
+    <string name="second_value">second value</string>
+    <string name="first_value">first value</string>
+    <string name="minus">minus</string>
+    <string name="increase">increase</string>
+    <string name="sum">sum</string>
+    <string name="ax_2_bx">ax^2 + bx</string>
+    <string name="square_root">square_root</string>
+    <string name="percent">percent</string>
+</resources>
