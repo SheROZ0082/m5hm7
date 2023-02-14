@@ -21,12 +21,14 @@ class MainActivityTest {
     fun sum(){
         onView(withId(R.id.et_Calc)).perform(typeText("2"))
         onView(withId(R.id.et_Calc2)).perform(typeText("2"), closeSoftKeyboard())
+        onView(withId(R.id.et_Calc2)).perform(click())
         onView(withId(R.id.tv_Calc_result)).check(matches(withText("4")))
     }
     @Test
     fun divide(){
         onView(withId(R.id.et_Calc)).perform(typeText("8"))
         onView(withId(R.id.et_Calc2)).perform(typeText("4"), closeSoftKeyboard())
+        onView(withId(R.id.et_Calc2)).perform(click())
         onView(withId(R.id.tv_Calc_result)).check(matches(withText("2")))
     }
     @Test
@@ -40,24 +42,28 @@ class MainActivityTest {
     fun increase(){
         onView(withId(R.id.et_Calc)).perform(typeText("10"))
         onView(withId(R.id.et_Calc2)).perform(typeText("2"), closeSoftKeyboard())
+        onView(withId(R.id.et_Calc2)).perform(click())
         onView(withId(R.id.tv_Calc_result)).check(matches(withText("20")))
     }
     @Test
     fun percent(){
         onView(withId(R.id.et_Calc)).perform(typeText("250"))
         onView(withId(R.id.et_Calc2)).perform(typeText("30"), closeSoftKeyboard())
+        onView(withId(R.id.et_Calc2)).perform(click())
         onView(withId(R.id.tv_Calc_result)).check(matches(withText("75")))
     }
     @Test
     fun equation(){
         onView(withId(R.id.et_Calc)).perform(typeText("2"))
         onView(withId(R.id.et_Calc2)).perform(typeText("3"), closeSoftKeyboard())
+        onView(withId(R.id.et_Calc2)).perform(click())
         onView(withId(R.id.tv_Calc_result)).check(matches(withText("10")))
     }
     @Test
     fun squareRoot(){
         onView(withId(R.id.et_Calc)).perform(typeText("2"))
         onView(withId(R.id.et_Calc2)).perform(typeText("4"), closeSoftKeyboard())
+        onView(withId(R.id.et_Calc2)).perform(click())
         onView(withId(R.id.tv_Calc_result)).check(matches(withText("36")))
     }
 
